@@ -78,13 +78,14 @@
     
     NSString *word = self.wordInputFiled.stringValue;
     if (word) {
+        NSString *engine = [XTranslationEngine chooseEngineName];
         NSString *first = [XTranslationEngine chooseFirstLangName];
         NSString *toLang = [[XTranslationEngine langMaps] objectForKey:first];
         
         __weak typeof(self)weakSelf = self;
         
         
-        [[GoogleCNTranslationEngine shared] translate:word toLang:toLang completion:^(NSString * _Nonnull result) {
+        [[NSClassFromString(engine) shared] translate:word toLang:toLang completion:^(NSString * _Nonnull result) {
             weakSelf.wordResultLabel.stringValue = result;
         }];
     }
