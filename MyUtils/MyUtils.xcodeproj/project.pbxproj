@@ -14,6 +14,8 @@
 		2B6AB0C82293E2FA00EFA445 /* theFurtherAdventuresOfRobinsonCrusoe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2B6AB0C62293E2FA00EFA445 /* theFurtherAdventuresOfRobinsonCrusoe.txt */; };
 		2BAAD116238AD56F00581787 /* ResourcesBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAAD113238AD56E00581787 /* ResourcesBuilderViewController.m */; };
 		2BAAD117238AD56F00581787 /* ResourcesBuilderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAAD115238AD56F00581787 /* ResourcesBuilderViewModel.m */; };
+		D20433892A482B670060EC2B /* ChatToCodeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D20433882A482B670060EC2B /* ChatToCodeUtils.m */; };
+		D204338A2A482B670060EC2B /* ChatToCodeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D20433882A482B670060EC2B /* ChatToCodeUtils.m */; };
 		D20661F12623D9A100FA19CB /* BingTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D20661F02623D9A100FA19CB /* BingTranslationEngine.m */; };
 		D237447A260083D2001D948F /* GoogleCNTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2374479260083D2001D948F /* GoogleCNTranslationEngine.m */; };
 		D237447F26008808001D948F /* TranslatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D237447E26008808001D948F /* TranslatorViewController.m */; };
@@ -21,6 +23,8 @@
 		D2374486260090A2001D948F /* JSONFighting.m in Sources */ = {isa = PBXBuildFile; fileRef = D2374484260090A2001D948F /* JSONFighting.m */; };
 		D237448B2600DDE8001D948F /* Translator.m in Sources */ = {isa = PBXBuildFile; fileRef = D23744892600DDE8001D948F /* Translator.m */; };
 		D23A1B4525E8D97F00AE6B1F /* NSImage+MGCropExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D23A1B4425E8D97F00AE6B1F /* NSImage+MGCropExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D27027422A480A5000D185B3 /* ChatCode.m in Sources */ = {isa = PBXBuildFile; fileRef = D27027402A480A5000D185B3 /* ChatCode.m */; };
+		D27027452A4811DE00D185B3 /* ChatToCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27027442A4811DE00D185B3 /* ChatToCodeViewController.m */; };
 		D2AB0FC725FFA7340049F09E /* XTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB0FC625FFA7340049F09E /* XTranslationEngine.m */; };
 		D2AB0FC925FFA7400049F09E /* XTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB0FC625FFA7340049F09E /* XTranslationEngine.m */; };
 		D2AB0FCE25FFA97E0049F09E /* GoogleTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB0FCD25FFA97E0049F09E /* GoogleTranslationEngine.m */; };
@@ -93,6 +97,8 @@
 		2BAAD115238AD56F00581787 /* ResourcesBuilderViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourcesBuilderViewModel.m; sourceTree = "<group>"; };
 		84202739FBE49DA0C07A6389 /* Pods-MyUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyUtils.release.xcconfig"; path = "Target Support Files/Pods-MyUtils/Pods-MyUtils.release.xcconfig"; sourceTree = "<group>"; };
 		C1718736F34245692D2ABD5C /* Pods_MyUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20433872A482B670060EC2B /* ChatToCodeUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatToCodeUtils.h; sourceTree = "<group>"; };
+		D20433882A482B670060EC2B /* ChatToCodeUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatToCodeUtils.m; sourceTree = "<group>"; };
 		D20661EF2623D9A100FA19CB /* BingTranslationEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BingTranslationEngine.h; sourceTree = "<group>"; };
 		D20661F02623D9A100FA19CB /* BingTranslationEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BingTranslationEngine.m; sourceTree = "<group>"; };
 		D2374478260083D2001D948F /* GoogleCNTranslationEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleCNTranslationEngine.h; sourceTree = "<group>"; };
@@ -106,6 +112,10 @@
 		D23A1B3D25E8D40100AE6B1F /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		D23A1B4325E8D97F00AE6B1F /* NSImage+MGCropExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+MGCropExtensions.h"; sourceTree = "<group>"; };
 		D23A1B4425E8D97F00AE6B1F /* NSImage+MGCropExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+MGCropExtensions.m"; sourceTree = "<group>"; };
+		D27027402A480A5000D185B3 /* ChatCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCode.m; sourceTree = "<group>"; };
+		D27027412A480A5000D185B3 /* ChatCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCode.h; sourceTree = "<group>"; };
+		D27027432A4811DE00D185B3 /* ChatToCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatToCodeViewController.h; sourceTree = "<group>"; };
+		D27027442A4811DE00D185B3 /* ChatToCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatToCodeViewController.m; sourceTree = "<group>"; };
 		D2AB0FC525FFA7340049F09E /* XTranslationEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTranslationEngine.h; sourceTree = "<group>"; };
 		D2AB0FC625FFA7340049F09E /* XTranslationEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTranslationEngine.m; sourceTree = "<group>"; };
 		D2AB0FCC25FFA97E0049F09E /* GoogleTranslationEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleTranslationEngine.h; sourceTree = "<group>"; };
@@ -169,6 +179,15 @@
 			path = Books;
 			sourceTree = "<group>";
 		};
+		D20433862A482B360060EC2B /* ChatToCode */ = {
+			isa = PBXGroup;
+			children = (
+				D20433872A482B670060EC2B /* ChatToCodeUtils.h */,
+				D20433882A482B670060EC2B /* ChatToCodeUtils.m */,
+			);
+			path = ChatToCode;
+			sourceTree = "<group>";
+		};
 		D2374482260090A2001D948F /* JSONFighting */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +246,7 @@
 		FC4CBF3021E5CF5B002F29A6 /* MyUtils */ = {
 			isa = PBXGroup;
 			children = (
+				D20433862A482B360060EC2B /* ChatToCode */,
 				D2374482260090A2001D948F /* JSONFighting */,
 				FC4CBF3121E5CF5B002F29A6 /* AppDelegate.h */,
 				FC4CBF3221E5CF5B002F29A6 /* AppDelegate.m */,
@@ -234,6 +254,8 @@
 				FC4CBF3521E5CF5B002F29A6 /* ViewController.m */,
 				D237447D26008808001D948F /* TranslatorViewController.h */,
 				D237447E26008808001D948F /* TranslatorViewController.m */,
+				D27027432A4811DE00D185B3 /* ChatToCodeViewController.h */,
+				D27027442A4811DE00D185B3 /* ChatToCodeViewController.m */,
 				FC76CAD921F9806300C7BA42 /* ColorStringSetting.h */,
 				FC76CADA21F9806300C7BA42 /* ColorStringSetting.m */,
 				2BAAD112238AD56E00581787 /* ResourcesBuilderViewController.h */,
@@ -279,6 +301,8 @@
 				2B3D4BA724CFBD4000DAB57B /* StringFormat.m */,
 				D23744882600DDE8001D948F /* Translator.h */,
 				D23744892600DDE8001D948F /* Translator.m */,
+				D27027412A480A5000D185B3 /* ChatCode.h */,
+				D27027402A480A5000D185B3 /* ChatCode.m */,
 				2B6AB0C92293E30100EFA445 /* Books */,
 				FC4CBF5421E5CF9A002F29A6 /* Info.plist */,
 				FC4CBF5521E5CF9A002F29A6 /* iMyUtils.entitlements */,
@@ -441,10 +465,12 @@
 				2BAAD116238AD56F00581787 /* ResourcesBuilderViewController.m in Sources */,
 				D2AB0FCE25FFA97E0049F09E /* GoogleTranslationEngine.m in Sources */,
 				D237447A260083D2001D948F /* GoogleCNTranslationEngine.m in Sources */,
+				D27027452A4811DE00D185B3 /* ChatToCodeViewController.m in Sources */,
 				D2AB0FC725FFA7340049F09E /* XTranslationEngine.m in Sources */,
 				D2E9E1CC26628DF900A85C95 /* BaiduTranslationEngine.m in Sources */,
 				D2374485260090A2001D948F /* JSONFighting.m in Sources */,
 				D20661F12623D9A100FA19CB /* BingTranslationEngine.m in Sources */,
+				D20433892A482B670060EC2B /* ChatToCodeUtils.m in Sources */,
 				FC4CBF3321E5CF5B002F29A6 /* AppDelegate.m in Sources */,
 				FC76CADB21F9806300C7BA42 /* ColorStringSetting.m in Sources */,
 				D237447F26008808001D948F /* TranslatorViewController.m in Sources */,
@@ -464,9 +490,11 @@
 				D2AB0FC925FFA7400049F09E /* XTranslationEngine.m in Sources */,
 				D2E7D91D2600E52C0088C464 /* GoogleCNTranslationEngine.m in Sources */,
 				FC4CBF5321E5CF9A002F29A6 /* SourceEditorCommand.m in Sources */,
+				D27027422A480A5000D185B3 /* ChatCode.m in Sources */,
 				FC4CBF6221E5D7A5002F29A6 /* ColorStatement.m in Sources */,
 				D2E9E1CD26628DF900A85C95 /* BaiduTranslationEngine.m in Sources */,
 				FC76CADC21F980E200C7BA42 /* ColorStringSetting.m in Sources */,
+				D204338A2A482B670060EC2B /* ChatToCodeUtils.m in Sources */,
 				D2E7D91F2600E5310088C464 /* GoogleTranslationEngine.m in Sources */,
 				D237448B2600DDE8001D948F /* Translator.m in Sources */,
 			);

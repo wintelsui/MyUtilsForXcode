@@ -12,6 +12,7 @@
 #import "RandomString.h"
 #import "StringFormat.h"
 #import "Translator.h"
+#import "ChatCode.h"
 
 @implementation SourceEditorCommand
 
@@ -40,6 +41,8 @@
         [Translator translate:invocation index:1];
     }else if ([identifier hasSuffix:idTranslatorToSecond]) {
         [Translator translate:invocation index:2];
+    }else if ([identifier hasSuffix:idChatCodeToFirst]) {
+        [ChatCode chatCode:invocation index:2];
     }
     
     

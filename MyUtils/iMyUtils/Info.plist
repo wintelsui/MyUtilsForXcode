@@ -108,6 +108,14 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>Translate to second language</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>SourceEditorCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).ChatToCode</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>Chat to Code</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>SourceEditorExtension</string>

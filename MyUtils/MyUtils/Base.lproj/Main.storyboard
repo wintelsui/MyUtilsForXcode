@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -66,7 +66,7 @@
                     <window key="window" title="Hello MyUtils for Xcode" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="231" y="582" width="650" height="400"/>
+                        <rect key="contentRect" x="124" y="582" width="700" height="400"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
@@ -83,16 +83,17 @@
         <!--Tab View Controller-->
         <scene sceneID="VMW-Y8-1uW">
             <objects>
-                <tabViewController selectedTabViewItemIndex="4" id="GY6-eo-VEV" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="0" id="GY6-eo-VEV" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem id="MFg-4H-QIg"/>
                         <tabViewItem id="pDR-hN-2RD"/>
                         <tabViewItem identifier="" id="m3N-O2-mLb"/>
                         <tabViewItem id="BTJ-uO-Ffr"/>
                         <tabViewItem id="jbY-Fi-8He"/>
+                        <tabViewItem id="KkU-FM-seN"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="Iae-ml-pSB">
-                        <rect key="frame" x="0.0" y="0.0" width="650" height="400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <font key="font" metaFont="system"/>
                         <connections>
@@ -106,22 +107,23 @@
                         <segue destination="ltW-Gw-qx8" kind="relationship" relationship="tabItems" id="LwG-KI-wPD"/>
                         <segue destination="lnM-5k-vh8" kind="relationship" relationship="tabItems" id="Oda-Af-iW3"/>
                         <segue destination="TRU-uk-EFT" kind="relationship" relationship="tabItems" id="lyr-Xt-xNE"/>
+                        <segue destination="tLs-ob-AOw" kind="relationship" relationship="tabItems" id="euk-Q3-WfO"/>
                     </connections>
                 </tabViewController>
                 <customObject id="UHF-PS-Ypl" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="481" y="353"/>
+            <point key="canvasLocation" x="481" y="365"/>
         </scene>
         <!--Random String-->
         <scene sceneID="9xu-He-giz">
             <objects>
                 <viewController title="Random String" id="ltW-Gw-qx8" sceneMemberID="viewController">
                     <view key="view" id="Tux-pj-J3j">
-                        <rect key="frame" x="0.0" y="0.0" width="650" height="400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="b4X-eg-qNH">
-                                <rect key="frame" x="18" y="20" width="614" height="80"/>
+                                <rect key="frame" x="18" y="20" width="664" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="NTl-PT-O9D"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="gpA-Sx-vXA"/>
@@ -137,7 +139,7 @@ Use：Select Number Or None Code Then Xcode - Editor - iMyTools - Random String<
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qu1-Pl-YpW">
-                                <rect key="frame" x="18" y="120" width="283" height="260"/>
+                                <rect key="frame" x="18" y="120" width="308" height="260"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="NSString *aStr = @&quot;&quot;;" id="O84-C4-lA5">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -145,7 +147,7 @@ Use：Select Number Or None Code Then Xcode - Editor - iMyTools - Random String<
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YHs-Yy-bZU">
-                                <rect key="frame" x="350" y="120" width="282" height="260"/>
+                                <rect key="frame" x="375" y="120" width="307" height="260"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="vge-30-RtV"/>
                                 </constraints>
@@ -156,7 +158,7 @@ Use：Select Number Or None Code Then Xcode - Editor - iMyTools - Random String<
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zec-1X-58J">
-                                <rect key="frame" x="307" y="242" width="37" height="17"/>
+                                <rect key="frame" x="332" y="242" width="37" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="33" id="3yC-dx-P0U"/>
                                     <constraint firstAttribute="height" constant="17" id="ijQ-gV-XMx"/>
@@ -168,7 +170,7 @@ Use：Select Number Or None Code Then Xcode - Editor - iMyTools - Random String<
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Quk-jA-Rft">
-                                <rect key="frame" x="152" y="0.0" width="346" height="21"/>
+                                <rect key="frame" x="177" y="0.0" width="346" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="WK5-di-Fgp"/>
                                 </constraints>
@@ -199,18 +201,18 @@ Use：Select Number Or None Code Then Xcode - Editor - iMyTools - Random String<
                 </viewController>
                 <customObject id="rip-Tn-aV0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1355" y="1047"/>
+            <point key="canvasLocation" x="1389" y="1047"/>
         </scene>
         <!--ColorTool-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController title="ColorTool" id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="650" height="400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="QlJ-5l-MBb">
-                                <rect key="frame" x="18" y="340" width="614" height="40"/>
+                                <rect key="frame" x="18" y="340" width="664" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Gbd-gQ-rk0"/>
                                 </constraints>
@@ -247,7 +249,7 @@ Use：Select Number Or None Code Then Xcode - Editor - iMyTools - Random String<
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qeb-1Z-REH">
-                                <rect key="frame" x="99" y="276" width="458" height="22"/>
+                                <rect key="frame" x="99" y="276" width="508" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="tgJ-oB-T91"/>
                                 </constraints>
@@ -258,7 +260,7 @@ Use：Select Number Or None Code Then Xcode - Editor - iMyTools - Random String<
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="j6b-9Y-dGA">
-                                <rect key="frame" x="151" y="308" width="354" height="22"/>
+                                <rect key="frame" x="151" y="308" width="404" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="JqB-5f-QI0"/>
                                 </constraints>
@@ -272,7 +274,7 @@ Use：Select Number Or None Code Then Xcode - Editor - iMyTools - Random String<
                                 </connections>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ey6-ga-Ji9">
-                                <rect key="frame" x="553" y="270" width="84" height="32"/>
+                                <rect key="frame" x="603" y="270" width="84" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="8oB-gl-0t5"/>
                                 </constraints>
@@ -285,7 +287,7 @@ Use：Select Number Or None Code Then Xcode - Editor - iMyTools - Random String<
                                 </connections>
                             </button>
                             <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HVP-hc-kIG">
-                                <rect key="frame" x="492" y="348" width="140" height="24"/>
+                                <rect key="frame" x="542" y="348" width="140" height="24"/>
                                 <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="RyJ-1c-7Y6">
                                     <font key="font" metaFont="system"/>
                                     <segments>
@@ -294,8 +296,8 @@ Use：Select Number Or None Code Then Xcode - Editor - iMyTools - Random String<
                                     </segments>
                                 </segmentedCell>
                             </segmentedControl>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LYI-fd-Sva">
-                                <rect key="frame" x="364" y="307" width="120" height="22"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LYI-fd-Sva">
+                                <rect key="frame" x="558" y="308" width="124" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="6u6-3n-WXd"/>
                                     <constraint firstAttribute="height" constant="22" id="CXe-DS-es9"/>
@@ -307,7 +309,7 @@ Use：Select Number Or None Code Then Xcode - Editor - iMyTools - Random String<
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cNu-Zj-6OY">
-                                <rect key="frame" x="18" y="20" width="614" height="80"/>
+                                <rect key="frame" x="18" y="20" width="664" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Yx0-0v-UH8"/>
                                 </constraints>
@@ -321,7 +323,7 @@ Use：Select "#FFFFFF" Then Xcode - Editor - iMyTools - Color Converter/Color Co
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lR7-YY-vht">
-                                <rect key="frame" x="152" y="0.0" width="346" height="21"/>
+                                <rect key="frame" x="177" y="0.0" width="346" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="yXx-5f-ekD"/>
                                 </constraints>
@@ -373,11 +375,11 @@ Use：Select "#FFFFFF" Then Xcode - Editor - iMyTools - Color Converter/Color Co
             <objects>
                 <viewController title="EnumTool" id="WFL-mf-LJ8" sceneMemberID="viewController">
                     <view key="view" id="c9W-s5-B38">
-                        <rect key="frame" x="0.0" y="0.0" width="657" height="400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6vw-90-UNB">
-                                <rect key="frame" x="18" y="20" width="621" height="80"/>
+                                <rect key="frame" x="18" y="20" width="664" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="Fdh-MS-WOX"/>
                                     <constraint firstAttribute="height" constant="80" id="pNK-Zk-n4W"/>
@@ -393,7 +395,7 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U9l-eW-MUL">
-                                <rect key="frame" x="18" y="120" width="286" height="260"/>
+                                <rect key="frame" x="18" y="120" width="308" height="260"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" id="IW3-vH-iJ3">
                                     <font key="font" metaFont="system"/>
                                     <string key="title">enum CSConnectionState {
@@ -407,7 +409,7 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NaS-Pe-l9b">
-                                <rect key="frame" x="353" y="120" width="286" height="260"/>
+                                <rect key="frame" x="375" y="120" width="307" height="260"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="R87-zx-25X"/>
                                 </constraints>
@@ -431,7 +433,7 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yV6-my-Npi">
-                                <rect key="frame" x="310" y="242" width="37" height="17"/>
+                                <rect key="frame" x="332" y="242" width="37" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="b36-Ts-Vai"/>
                                     <constraint firstAttribute="width" constant="33" id="fD4-s7-qVb"/>
@@ -443,7 +445,7 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2Qy-c6-UP2">
-                                <rect key="frame" x="156" y="0.0" width="346" height="21"/>
+                                <rect key="frame" x="177" y="0.0" width="346" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="WVN-aw-Nzw"/>
                                 </constraints>
@@ -750,8 +752,8 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
         <scene sceneID="awX-g4-WLu">
             <objects>
                 <viewController title="Translator" identifier="TranslatorViewController" storyboardIdentifier="TranslatorViewController" id="TRU-uk-EFT" customClass="TranslatorViewController" sceneMemberID="viewController">
-                    <view key="view" id="tWh-Cu-kHY">
-                        <rect key="frame" x="0.0" y="0.0" width="630" height="382"/>
+                    <view key="view" misplaced="YES" id="tWh-Cu-kHY">
+                        <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mUq-8A-vw5">
@@ -1000,6 +1002,151 @@ Use：Select words Code Then Xcode - Editor - iMyTools - Translator</string>
                 <customObject id="Det-eV-QAz" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2064" y="349"/>
+        </scene>
+        <!--ChatToCode-->
+        <scene sceneID="p8T-k6-aZm">
+            <objects>
+                <viewController title="ChatToCode" identifier="ChatToCodeViewController" storyboardIdentifier="ChatToCodeViewController" id="tLs-ob-AOw" customClass="ChatToCodeViewController" sceneMemberID="viewController">
+                    <view key="view" id="pUw-tL-TqV">
+                        <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Apx-6i-xRe">
+                                <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
+                                <subviews>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="58i-Ri-w2u" userLabel="actions">
+                                        <rect key="frame" x="20" y="20" width="660" height="112"/>
+                                        <subviews>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ofO-0T-p1e">
+                                                <rect key="frame" x="273" y="-7" width="114" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="BuB-PI-Ie2"/>
+                                                </constraints>
+                                                <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="52Y-rt-6kb">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="saveOpenAIKeyPressed:" target="tLs-ob-AOw" id="Teq-Lr-pBS"/>
+                                                </connections>
+                                            </button>
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="dXc-Fw-3OW">
+                                                <rect key="frame" x="20" y="40" width="620" height="52"/>
+                                                <subviews>
+                                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gxR-ri-97C">
+                                                        <rect key="frame" x="513" y="20" width="114" height="32"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="gFB-pV-UW3"/>
+                                                        </constraints>
+                                                        <buttonCell key="cell" type="push" title="Test Key" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="E9Y-rj-OZF">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="testOpenAIKeyPressed:" target="tLs-ob-AOw" id="Xaz-Pk-dV0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KKA-8W-Ch7">
+                                                        <rect key="frame" x="463" y="29" width="54" height="16"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="16" id="3si-S8-rpm"/>
+                                                            <constraint firstAttribute="width" constant="50" id="5Yb-ah-92g"/>
+                                                        </constraints>
+                                                        <textFieldCell key="cell" lineBreakMode="clipping" title="unTest" id="160-cA-M8L">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <secureTextField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PEq-T7-GvR">
+                                                        <rect key="frame" x="95" y="26" width="350" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="21" id="bWg-fD-TAI"/>
+                                                        </constraints>
+                                                        <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Please input OpenAI Key" drawsBackground="YES" usesSingleLineMode="YES" id="gOg-Uc-D1T">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                            <allowedInputSourceLocales>
+                                                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                                            </allowedInputSourceLocales>
+                                                        </secureTextFieldCell>
+                                                    </secureTextField>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XFt-QP-41B">
+                                                        <rect key="frame" x="-2" y="29" width="79" height="16"/>
+                                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="OpenAI Key:" id="hZY-Ks-4mt">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8t5-F6-ycO">
+                                                        <rect key="frame" x="93" y="5" width="37" height="16"/>
+                                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="1xR-oE-xGE">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="gxR-ri-97C" firstAttribute="centerY" secondItem="PEq-T7-GvR" secondAttribute="centerY" id="C9A-KK-OIf"/>
+                                                    <constraint firstItem="8t5-F6-ycO" firstAttribute="top" secondItem="PEq-T7-GvR" secondAttribute="bottom" constant="5" id="EJV-yL-gSr"/>
+                                                    <constraint firstItem="PEq-T7-GvR" firstAttribute="top" secondItem="dXc-Fw-3OW" secondAttribute="top" constant="5" id="JXi-A8-7v3"/>
+                                                    <constraint firstItem="PEq-T7-GvR" firstAttribute="leading" secondItem="XFt-QP-41B" secondAttribute="trailing" constant="20" id="K2d-3E-bS1"/>
+                                                    <constraint firstItem="PEq-T7-GvR" firstAttribute="centerY" secondItem="XFt-QP-41B" secondAttribute="centerY" id="NNL-RZ-6Um"/>
+                                                    <constraint firstItem="8t5-F6-ycO" firstAttribute="leading" secondItem="PEq-T7-GvR" secondAttribute="leading" id="OTr-Eq-9OX"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8t5-F6-ycO" secondAttribute="bottom" constant="5" id="QUG-Ad-8HA"/>
+                                                    <constraint firstItem="KKA-8W-Ch7" firstAttribute="leading" secondItem="PEq-T7-GvR" secondAttribute="trailing" constant="20" id="aau-C6-jQd"/>
+                                                    <constraint firstItem="KKA-8W-Ch7" firstAttribute="centerY" secondItem="PEq-T7-GvR" secondAttribute="centerY" id="cda-uk-eTZ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gxR-ri-97C" secondAttribute="trailing" id="dgg-zx-IUu"/>
+                                                    <constraint firstItem="XFt-QP-41B" firstAttribute="leading" secondItem="dXc-Fw-3OW" secondAttribute="leading" id="eE0-9E-TaZ"/>
+                                                    <constraint firstItem="gxR-ri-97C" firstAttribute="leading" secondItem="KKA-8W-Ch7" secondAttribute="trailing" constant="5" id="zZ3-7B-4Ki"/>
+                                                </constraints>
+                                            </customView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ofO-0T-p1e" secondAttribute="bottom" id="2wQ-6M-R3s"/>
+                                            <constraint firstAttribute="trailing" secondItem="dXc-Fw-3OW" secondAttribute="trailing" constant="20" id="8Ea-7b-I5q"/>
+                                            <constraint firstItem="ofO-0T-p1e" firstAttribute="top" secondItem="dXc-Fw-3OW" secondAttribute="bottom" constant="20" id="Lfh-0z-EkF"/>
+                                            <constraint firstItem="dXc-Fw-3OW" firstAttribute="leading" secondItem="58i-Ri-w2u" secondAttribute="leading" constant="20" id="dRn-ql-GG9"/>
+                                            <constraint firstItem="dXc-Fw-3OW" firstAttribute="top" secondItem="58i-Ri-w2u" secondAttribute="top" constant="20" id="sft-yc-jXr"/>
+                                            <constraint firstItem="ofO-0T-p1e" firstAttribute="centerX" secondItem="58i-Ri-w2u" secondAttribute="centerX" id="ts6-7z-Y6r"/>
+                                        </constraints>
+                                    </customView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="fl0-Mp-O5m" userLabel="tips">
+                                        <rect key="frame" x="20" y="152" width="660" height="228"/>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="58i-Ri-w2u" firstAttribute="top" secondItem="fl0-Mp-O5m" secondAttribute="bottom" constant="20" id="1wf-fn-Qvz"/>
+                                    <constraint firstAttribute="width" constant="700" id="6Ir-0o-7kw"/>
+                                    <constraint firstAttribute="height" constant="400" id="K2A-6Y-lh3"/>
+                                    <constraint firstAttribute="bottom" secondItem="58i-Ri-w2u" secondAttribute="bottom" constant="20" id="NWh-uB-M1T"/>
+                                    <constraint firstAttribute="trailing" secondItem="fl0-Mp-O5m" secondAttribute="trailing" constant="20" id="Ys3-8k-koD"/>
+                                    <constraint firstAttribute="trailing" secondItem="58i-Ri-w2u" secondAttribute="trailing" constant="20" id="pth-qO-KVz"/>
+                                    <constraint firstItem="fl0-Mp-O5m" firstAttribute="leading" secondItem="Apx-6i-xRe" secondAttribute="leading" constant="20" id="tke-Hg-Zac"/>
+                                    <constraint firstItem="58i-Ri-w2u" firstAttribute="leading" secondItem="Apx-6i-xRe" secondAttribute="leading" constant="20" id="uLS-5T-lu0"/>
+                                    <constraint firstItem="fl0-Mp-O5m" firstAttribute="top" secondItem="Apx-6i-xRe" secondAttribute="top" constant="20" id="xeH-bn-TQy"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Apx-6i-xRe" secondAttribute="trailing" id="30X-2N-d54"/>
+                            <constraint firstItem="Apx-6i-xRe" firstAttribute="leading" secondItem="pUw-tL-TqV" secondAttribute="leading" id="QLa-iV-UPf"/>
+                            <constraint firstAttribute="bottom" secondItem="Apx-6i-xRe" secondAttribute="bottom" id="YBp-U1-L3p"/>
+                            <constraint firstItem="Apx-6i-xRe" firstAttribute="top" secondItem="pUw-tL-TqV" secondAttribute="top" id="lzG-34-giG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="openAiKeyInput" destination="PEq-T7-GvR" id="JaV-fG-oRo"/>
+                        <outlet property="openAiKeyShow" destination="8t5-F6-ycO" id="qQz-td-Mpw"/>
+                        <outlet property="openAiKeyTestResult" destination="KKA-8W-Ch7" id="Edo-hp-3Lk"/>
+                    </connections>
+                </viewController>
+                <customObject id="Lwr-w7-n15" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2115" y="1047"/>
         </scene>
     </scenes>
     <resources>
